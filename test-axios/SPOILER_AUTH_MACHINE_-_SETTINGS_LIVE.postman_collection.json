@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "811a4016-1401-47e9-ae3d-5346df6dd87a",
+		"name": "AUTH MACHINE - SETTINGS LIVE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1.1. REGISTER",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Chelsy",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "chelsy@thunderlab.id",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://oryx.thunderlab.id/account/register",
+					"protocol": "https",
+					"host": [
+						"oryx",
+						"thunderlab",
+						"id"
+					],
+					"path": [
+						"account",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2. LOGIN",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "chelsy@thunderlab.id",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://oryx.thunderlab.id/account/login",
+					"protocol": "https",
+					"host": [
+						"oryx",
+						"thunderlab",
+						"id"
+					],
+					"path": [
+						"account",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "4. WHOAMI",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvb3J5eC50aHVuZGVybGFiLmlkIiwiYXVkIjoiaHR0cHM6XC9cL29yeXgudGh1bmRlcmxhYi5pZCIsImlhdCI6MTYyNTU5MTE1OSwibmJmIjoxNjI1NTkxMTU5LCJ1c2VyIjp7ImVtYWlsIjoiY2hlbHN5QHRodW5kZXJsYWIuaWQifX0.oERa2ANp5tMhhVJXV8XnbK1JY_BibHZI8dvQWkY3KEo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://oryx.thunderlab.id/account/whoami",
+					"protocol": "https",
+					"host": [
+						"oryx",
+						"thunderlab",
+						"id"
+					],
+					"path": [
+						"account",
+						"whoami"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

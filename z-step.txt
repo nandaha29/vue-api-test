@@ -1,0 +1,8 @@
+STEPBY STEPBY
+
+- $ vue ui
+https://www.youtube.com/watch?v=0SNCLMivIZA&list=PLIan8aHxsPj3a7oLHb2a8pw8IHBq45WYu&index=2
+- instal
+  * plugin -> router
+  * dependency -> vue bootstrap, axios, vue toast notification,
+- tab tugas 
